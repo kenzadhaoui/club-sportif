@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Club Sportif - BackOffice</title>
+</head>
+<body>
+
+    <!-- Entête de la page -->
+    <h2>Club Sportif - BackOffice</h2>
+    <p>
+        <a href="../FrontOffice/index.html">Retour au site</a> | 
+        <a href="activites-liste.html">Activités</a> | 
+        <a href="activite-form.html">Nouvelle activité</a> | 
+        <a href="adherents-liste.html">Adhérents</a> | 
+        <a href="adherent-form.html">Nouvel adhérent</a>
+    </p>
+    <hr>
+
+    <!-- Contenu principal -->
+    <h3>Formulaire activité</h3>
+
+    <form action="#" method="POST">
+        <p>
+            <label for="nom">Nom de l'activité</label>
+            <!-- Entre 3 et 50 caractères, pas de caractères spéciaux (lettres, chiffres, espaces uniquement) -->
+            <input type="text" id="nom" name="nom" required 
+                   minlength="3" maxlength="50" 
+                   pattern="[A-Za-z0-9À-ÿ\s]+" 
+                   title="Entre 3 et 50 caractères (lettres, chiffres et espaces uniquement)">
+        </p>
+
+        <p>
+            <label for="categorie">Catégorie</label>
+            <select id="categorie" name="categorie" required>
+                <option value="">-- Choisir --</option>
+                <option value="sports_collectifs">Sports collectifs</option>
+                <option value="sports_aquatiques">Sports aquatiques</option>
+                <option value="fitness">Fitness & Musculation</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="description">Description</label>
+            <!-- Texte indicatif (placeholder) et limite maximale de caractères -->
+            <textarea id="description" name="description" rows="4" cols="35" 
+                      maxlength="300" required 
+                      placeholder="Description de l'activité (max 300 caractères)"></textarea>
+        </p>
+
+        <p>
+            <label for="jour">Jour</label>
+            <select id="jour" name="jour" required>
+                <option value="">-- Choisir un jour --</option>
+                <option value="Lundi">Lundi</option>
+                <option value="Mardi">Mardi</option>
+                <option value="Mercredi">Mercredi</option>
+                <option value="Jeudi">Jeudi</option>
+                <option value="Vendredi">Vendredi</option>
+                <option value="Samedi">Samedi</option>
+                <option value="Dimanche">Dimanche</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="horaire">Horaire</label>
+            <!-- Format d'heure HH:MM - HH:MM -->
+            <input type="text" id="horaire" name="horaire" required 
+                   pattern="(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]\s*-\s*(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]" 
+                   placeholder="08:30 - 10:00" 
+                   title="Respectez le format d'heure (ex: 08:30 - 10:00)">
+        </p>
+
+        <p>
+            <label for="tarif">Tarif (€/mois)</label>
+            <!-- Valeur numérique positive entre 0 et 1000 -->
+            <input type="number" id="tarif" name="tarif" required 
+                   min="0" max="1000" step="0.01" 
+                   title="Saisissez une valeur positive entre 0 et 1000">
+        </p>
+
+        <p>
+            <label for="places">Nombre de places</label>
+            <!-- Entier positif entre 1 et 200 -->
+            <input type="number" id="places" name="places" required 
+                   min="1" max="200" step="1" 
+                   title="Nombre entier compris entre 1 et 200">
+        </p>
+
+        <p>
+            <input type="submit" value="Enregistrer">
+            <input type="reset" value="Annuler">
+        </p>
+    </form>
+
+    <hr>
+
+    <!-- Pied de page -->
+    <footer style="text-align: center;">
+        <h3>Club Sportif</h3>
+        <p>Votre partenaire pour une vie saine et active. Rejoignez-nous et profitez d'activités sportives adaptées à tous les niveaux.</p>
+        <hr style="width: 50%;">
+        <p><strong>Liens utiles</strong></p>
+        <p>
+            <a href="../FrontOffice/index.html">Accueil</a> | 
+            <a href="activites-liste.html">Activités</a> | 
+            <a href="adherent-form.html">Nouvel adhérent</a>
+        </p>
+        <hr style="width: 50%;">
+        <p><strong>Contact</strong></p>
+        <p>
+            Tunis, Tunisie<br>
+            +216 70 000 000<br>
+            contact@clubsportif.tn
+        </p>
+        <p>© 2026 Club Sportif - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

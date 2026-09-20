@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Club Sportif - BackOffice - Liste Activités</title>
+</head>
+<body>
+
+    <h2>Club Sportif - BackOffice</h2>
+    <p>
+        <a href="../FrontOffice/index.html">Retour au site</a> | 
+        <a href="activites-liste.html">Activités</a> | 
+        <a href="activite-form.html">Nouvelle activité</a> | 
+        <a href="adherents-liste.html">Adhérents</a> | 
+        <a href="adherent-form.html">Nouvel adhérent</a>
+    </p>
+    <hr>
+
+    <main>
+        <h3>Liste des activités</h3>
+        <p><a href="activite-form.html">+ Ajouter une activité</a></p>
+
+        <table border="1" cellpadding="8" style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Activité</th>
+                    <th>Catégorie</th>
+                    <th>Jour</th>
+                    <th>Horaire</th>
+                    <th>Tarif</th>
+                    <th>Places</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Football</td>
+                    <td>Sports collectifs</td>
+                    <td>Samedi</td>
+                    <td>15:00 - 17:00</td>
+                    <td>40 €/mois</td>
+                    <td>22 / 30</td>
+                    <td>
+                        <a href="activite-detail.html">Détails</a> | 
+                        <a href="activite-form.html">Modifier</a> | 
+                        <a href="#" onclick="return confirm('Supprimer cette activité ?');">Supprimer</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Natation</td>
+                    <td>Sports aquatiques</td>
+                    <td>Mercredi</td>
+                    <td>14:00 - 16:00</td>
+                    <td>50 €/mois</td>
+                    <td>15 / 20</td>
+                    <td>
+                        <a href="activite-detail.html">Détails</a> | 
+                        <a href="activite-form.html">Modifier</a> | 
+                        <a href="#" onclick="return confirm('Supprimer cette activité ?');">Supprimer</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <hr>
+    <footer style="text-align: center;">
+        <p>© 2026 Club Sportif - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

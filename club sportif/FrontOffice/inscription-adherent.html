@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Club Sportif - Inscription</title>
+</head>
+<body>
+
+    <header style="text-align: center;">
+        <nav>
+            <a href="index.html">Accueil</a> |
+            <a href="activites-liste.html">Activités</a> |
+            <a href="inscription-adherent.html">Inscription</a> |
+            <a href="../BackOffice/activite-form.html">Administration</a>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <h2 style="text-align: center;">Formulaire d'inscription</h2>
+
+        <form action="#" method="POST" style="width: 400px; margin: auto;">
+            <p>
+                <label for="nom">Nom :</label><br>
+                <input type="text" id="nom" name="nom" required 
+                       minlength="2" maxlength="30" 
+                       pattern="[A-Za-zÀ-ÿ\s\-]+" 
+                       title="2 à 30 lettres uniquement" style="width: 100%;">
+            </p>
+            <p>
+                <label for="prenom">Prénom :</label><br>
+                <input type="text" id="prenom" name="prenom" required 
+                       minlength="2" maxlength="30" 
+                       pattern="[A-Za-zÀ-ÿ\s\-]+" 
+                       title="2 à 30 lettres uniquement" style="width: 100%;">
+            </p>
+            <p>
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email" required 
+                       maxlength="255" placeholder="exemple@domaine.tn" style="width: 100%;">
+            </p>
+            <p>
+                <label for="activite">Activité souhaitée :</label><br>
+                <select id="activite" name="activite" required style="width: 100%;">
+                    <option value="">-- Sélectionner une activité --</option>
+                    <option value="football">Football</option>
+                    <option value="natation">Natation</option>
+                    <option value="fitness">Fitness</option>
+                </select>
+            </p>
+            <p>
+                <label for="duree">Durée d'abonnement :</label><br>
+                <select id="duree" name="duree" required style="width: 100%;">
+                    <option value="">-- Sélectionner une durée --</option>
+                    <option value="1">1 mois</option>
+                    <option value="3">3 mois</option>
+                    <option value="6">6 mois</option>
+                    <option value="12">12 mois</option>
+                </select>
+            </p>
+            <p>
+                <label for="tarif">Tarif (€) :</label><br>
+                <input type="text" id="tarif" name="tarif" value="50 €" readonly style="width: 100%;">
+            </p>
+            <p style="text-align: center;">
+                <input type="submit" value="S'inscrire">
+                <input type="reset" value="Annuler">
+            </p>
+        </form>
+    </main>
+
+    <hr>
+    <footer style="text-align: center;">
+        <p>© 2026 Club Sportif - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

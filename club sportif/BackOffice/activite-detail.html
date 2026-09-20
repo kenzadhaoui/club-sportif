@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Club Sportif - BackOffice - Détail Activité</title>
+</head>
+<body>
+
+    <h2>Club Sportif - BackOffice</h2>
+    <p>
+        <a href="../FrontOffice/index.html">Retour au site</a> | 
+        <a href="activites-liste.html">Activités</a> | 
+        <a href="activite-form.html">Nouvelle activité</a> | 
+        <a href="adherents-liste.html">Adhérents</a> | 
+        <a href="adherent-form.html">Nouvel adhérent</a>
+    </p>
+    <hr>
+
+    <main>
+        <h3>Fiche de l'activité : Football</h3>
+
+        <p><strong>ID :</strong> 1</p>
+        <p><strong>Catégorie :</strong> Sports collectifs</p>
+        <p><strong>Description :</strong> Entraînement hebdomadaire et matchs amicals.</p>
+        <p><strong>Jour :</strong> Samedi</p>
+        <p><strong>Horaire :</strong> 15:00 - 17:00</p>
+        <p><strong>Tarif :</strong> 40 € / mois</p>
+        <p><strong>Places occupées :</strong> 22 sur 30</p>
+
+        <p>
+            <a href="activite-form.html">Modifier</a> | 
+            <a href="#" onclick="return confirm('Supprimer cette activité ?');">Supprimer</a>
+        </p>
+
+        <hr>
+
+        <h4>Adhérents inscrits à cette activité</h4>
+        <table border="1" cellpadding="6" style="border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>ID Adhérent</th>
+                    <th>Nom & Prénom</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Ben Ali Mohamed</td>
+                    <td>mohamed.benali@email.tn</td>
+                    <td><a href="adherent-detail.html">Voir fiche</a></td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Trabelsi Amine</td>
+                    <td>amine.trabelsi@email.tn</td>
+                    <td><a href="adherent-detail.html">Voir fiche</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <hr>
+    <footer style="text-align: center;">
+        <p>© 2026 Club Sportif - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

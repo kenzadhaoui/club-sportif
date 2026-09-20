@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Club Sportif - BackOffice - Formulaire Adhérent</title>
+</head>
+<body>
+
+    <h2>Club Sportif - BackOffice</h2>
+    <p>
+        <a href="../FrontOffice/index.html">Retour au site</a> | 
+        <a href="activites-liste.html">Activités</a> | 
+        <a href="activite-form.html">Nouvelle activité</a> | 
+        <a href="adherents-liste.html">Adhérents</a> | 
+        <a href="adherent-form.html">Nouvel adhérent</a>
+    </p>
+    <hr>
+
+    <main>
+        <h3>Formulaire adhérent</h3>
+
+        <form action="#" method="POST">
+            <p>
+                <label for="nom">Nom :</label><br>
+                <input type="text" id="nom" name="nom" required 
+                       minlength="2" maxlength="30" 
+                       pattern="[A-Za-zÀ-ÿ\s\-]+" 
+                       title="Entre 2 et 30 lettres uniquement">
+            </p>
+            <p>
+                <label for="prenom">Prénom :</label><br>
+                <input type="text" id="prenom" name="prenom" required 
+                       minlength="2" maxlength="30" 
+                       pattern="[A-Za-zÀ-ÿ\s\-]+" 
+                       title="Entre 2 et 30 lettres uniquement">
+            </p>
+            <p>
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email" required 
+                       maxlength="255" placeholder="exemple@domaine.tn">
+            </p>
+            <p>
+                <label for="telephone">Téléphone :</label><br>
+                <input type="tel" id="telephone" name="telephone" required 
+                       pattern="[0-9]{8,15}" 
+                       placeholder="21670000000" 
+                       title="Numéro contenant entre 8 et 15 chiffres">
+            </p>
+            <p>
+                <label for="activite">Activité :</label><br>
+                <select id="activite" name="activite" required>
+                    <option value="">-- Choisir une activité --</option>
+                    <option value="football">Football</option>
+                    <option value="natation">Natation</option>
+                    <option value="fitness">Fitness</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Enregistrer">
+                <input type="reset" value="Annuler">
+            </p>
+        </form>
+    </main>
+
+    <hr>
+    <footer style="text-align: center;">
+        <p>© 2026 Club Sportif - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

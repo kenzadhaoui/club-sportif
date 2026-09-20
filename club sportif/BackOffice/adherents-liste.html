@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Club Sportif - BackOffice - Liste Adhérents</title>
+</head>
+<body>
+
+    <h2>Club Sportif - BackOffice</h2>
+    <p>
+        <a href="../FrontOffice/index.html">Retour au site</a> | 
+        <a href="activites-liste.html">Activités</a> | 
+        <a href="activite-form.html">Nouvelle activité</a> | 
+        <a href="adherents-liste.html">Adhérents</a> | 
+        <a href="adherent-form.html">Nouvel adhérent</a>
+    </p>
+    <hr>
+
+    <main>
+        <h3>Liste des Adhérents</h3>
+        <p><a href="adherent-form.html">+ Ajouter un adhérent</a></p>
+
+        <table border="1" cellpadding="8" style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Email</th>
+                    <th>Téléphone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Ben Ali</td>
+                    <td>Mohamed</td>
+                    <td>mohamed.benali@email.tn</td>
+                    <td>21698000000</td>
+                    <td>
+                        <a href="adherent-detail.html">Détails</a> | 
+                        <a href="adherent-form.html">Modifier</a> | 
+                        <a href="#" onclick="return confirm('Supprimer cet adhérent ?');">Supprimer</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Trabelsi</td>
+                    <td>Amine</td>
+                    <td>amine.trabelsi@email.tn</td>
+                    <td>21620000000</td>
+                    <td>
+                        <a href="adherent-detail.html">Détails</a> | 
+                        <a href="adherent-form.html">Modifier</a> | 
+                        <a href="#" onclick="return confirm('Supprimer cet adhérent ?');">Supprimer</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <hr>
+    <footer style="text-align: center;">
+        <p>© 2026 Club Sportif - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
